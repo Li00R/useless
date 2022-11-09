@@ -35,6 +35,7 @@ Get-appxpackage -allusers Microsoft.WindowsSoundRecorder | Remove-AppxPackage;
 Get-appxpackage -allusers Microsoft.WebpImageExtension | Remove-AppxPackage;
 Get-appxpackage -allusers Microsoft.Wallet | Remove-AppxPackage;
 Get-appxpackage -allusers Microsoft.HEIFImageExtension | Remove-AppxPackage;
+Get-appxpackage -allusers Microsoft.MicrosoftEdge.Stable | Remove-AppxPackage;
 ```
 
 
@@ -92,4 +93,5 @@ Set-service -Name XblGameSave -StartupType Disable;
 Set-service -Name WdiServiceHost -StartupType Disable;
 Set-service -Name WdiSystemHost -StartupType Disable;
 Set-service -Name XblAuthManager -StartupType Disable;
+Set-service -Name MixedRealityOpenXRSvc -StartupType Disable;
 ```
